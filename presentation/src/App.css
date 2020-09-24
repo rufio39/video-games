@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20vw;
+  
+  
+}
+
+.del-console {
+  color:black;
+  background-color: red;
+  width: 5%
+}
+.dropdown {
+  background-color: lightblue;  
+  width: 95%;
+}
+label {
+  margin-right: 2vw;
+  font-size: large;
+
+}
+button {
+  background-color: blue;
+  color: white;
+  width: 35%;
+  align-self: center;
+}
