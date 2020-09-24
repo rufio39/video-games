@@ -43,13 +43,14 @@ form {
   flex-direction: column;
   margin: 0 20vw;
   
-  
 }
 
-.del-console {
+.del-btn {
   color:black;
   background-color: red;
-  width: 5%
+  width: auto;
+  margin-left: auto;
+
 }
 .dropdown {
   background-color: lightblue;  

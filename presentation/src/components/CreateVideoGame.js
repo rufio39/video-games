@@ -1,6 +1,6 @@
 import React from 'react';
 //grabs the environment variable for the API_URL from the process.
-const API_URI = process.env.REACT_APP_API_URL;
+const API_URL = process.env.REACT_APP_API_URL;
 
 class CreateVideoGame extends React.Component {
     constructor(props) {
@@ -38,7 +38,7 @@ class CreateVideoGame extends React.Component {
     }
     handleSubmit = (event) => {
         event.preventDefault();
-        fetch(`${API_URI}/video-games`, {
+        fetch(`${API_URL}/video-games`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -79,7 +79,7 @@ class CreateVideoGame extends React.Component {
                         <option value="SWITCH">SWITCH</option>
                         <option value="PC">PC</option>
                     </select>
-                    <input className="del-console"
+                    <input className="del-btn"
                         type="button"
                         value="X"
                         onClick={() => this.removeConsole(index)}
