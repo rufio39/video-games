@@ -26,7 +26,7 @@ export default class extends Component {
              />)
         return (
             <div>
-                <h1>Video Games</h1>
+                <h1>VIDEO GAMES</h1>
                 <CreateVideoGame refresh={this.getVideoGames}/>
                 {diplayGames}
             </div>

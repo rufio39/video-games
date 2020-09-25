@@ -45,4 +45,19 @@ router.delete('/:id', function (req, res, next) {
     })
 })
 
+router.put('/:id', function (req, res, next) {
+  const info = {
+    id: req.params.id,
+    doc: req.body,
+    collection: req.app.locals.collectionVideoGames
+  }
+  db.replaceOne(info)
+    .then((data) => {
+      res.json({msg: `updated ${info.id}`});
+    })
+    .catch(err => {
+      console.log(err);
+    })
+})
+
 module.exports = router;

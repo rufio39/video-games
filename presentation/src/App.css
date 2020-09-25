@@ -1,5 +1,9 @@
-.App {
+.App, html {
   text-align: center;
+  background-image: url(https://rb.gy/9394uo);
+  background-repeat: no-repeat;
+  height: 100%;
+  color:black
 }
 
 .App-logo {
@@ -21,7 +25,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -46,11 +50,9 @@ form {
 }
 
 .del-btn {
-  color:black;
-  background-color: red;
-  width: auto;
-  margin-left: auto;
-
+  color:white;
+  background-color: rgba(221, 70, 70, 0.973);
+  width: 5%;
 }
 .dropdown {
   background-color: lightblue;  
@@ -62,8 +64,18 @@ label {
 
 }
 button {
-  background-color: blue;
-  color: white;
+  background-color: turquoise;
+  color: rgb(0, 0, 0);
   width: 35%;
   align-self: center;
+}
+.game-name {
+  padding: 0 10px;
+}
+.edit {
+  color: black;
+  background-color:lightgreen;
+  width: 60px;
+  margin-left: 1vw;
+  margin-right: 2px;
 }
